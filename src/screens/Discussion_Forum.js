@@ -1,6 +1,5 @@
-import Header from "../components/Header";
-
 import React from "react";
+
 import {
   MDBCard,
   MDBCardBody,
@@ -8,14 +7,13 @@ import {
   MDBContainer,
   MDBIcon,
   MDBRow,
+  MDBTextArea,
   MDBTypography,
 } from "mdb-react-ui-kit";
 
-export default function Column() {
+export default function Discussion() {
   return (
     <section className="vh-100">
-      <Header/>
-
       <MDBContainer className="py-5" style={{ maxWidth: "1000px" }}>
         <MDBRow className="justify-content-center">
           <MDBCol md="11" lg="9" xl="7">
@@ -104,6 +102,15 @@ export default function Column() {
             </div>
           </MDBCol>
         </MDBRow>
+
+        <MDBCard className="w-100">
+          <MDBCardBody className="p-4">
+            <MDBTextArea className="w-70">
+
+            </MDBTextArea>
+          </MDBCardBody>
+        </MDBCard>
+
       </MDBContainer>
     </section>
   );
