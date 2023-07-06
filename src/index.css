@@ -12,4 +12,6 @@ main{
   padding: 20px;
 }
 
-.link-muted { color: #aaa; } .link-muted:hover { color: #1266f1; }
+.row-bottom {
+  text-align: center;
+}

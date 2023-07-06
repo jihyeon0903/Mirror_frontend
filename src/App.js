@@ -15,7 +15,7 @@ import Test from './screens/Test'
 function App() {
   return (
     <div>
-      <Header/>
+      <Header />
         <main>
             {/* <HomeScreen/> */}
             <Routes>

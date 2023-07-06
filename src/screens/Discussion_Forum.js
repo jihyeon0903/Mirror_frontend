@@ -8,10 +8,7 @@ import {
   MDBContainer,
   MDBIcon,
   MDBRow,
-  MDBTextArea,
   MDBTypography,
-  MDBInputGroup,
-  MDBInput,
   MDBBtn
 } from "mdb-react-ui-kit";
 
