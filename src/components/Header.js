@@ -2,8 +2,8 @@ import React from 'react'
 import { Navbar, Nav, Container, Row, NavDropdown } from 'react-bootstrap'
 
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
-import SignIn from './Signin';
-import SignUp from './Signup';
+// import SignIn from './Signin';
+// import SignUp from './Signup';
 
 function Header() {
   return (
@@ -37,6 +37,14 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      {/* <Router>
+        <Switch>
+          <Route exact path='/login' Component={SignIn} />
+          <Route exact path='/register' Component={SignUp}/>
+        </Switch>
+      </Router> */}
+
     </header>
 
   )
