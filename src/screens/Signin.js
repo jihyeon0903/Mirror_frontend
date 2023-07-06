@@ -41,7 +41,7 @@ function SignIn() {
             </div>
 
             <div class='text-center'>
-              <MDBBtn className='mb-4 mt-4 w-50' size='lg'>Sign In</MDBBtn>
+              <MDBBtn className='mb-4 mt-4 w-100' size='lg'>Sign In</MDBBtn>
             </div>
 
             <MDBRow>

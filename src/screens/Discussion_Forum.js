@@ -1,4 +1,6 @@
 import React from "react";
+import Form from 'react-bootstrap/form';
+import { Container } from 'react-bootstrap'
 
 import {
   MDBCard,
@@ -9,14 +11,17 @@ import {
   MDBRow,
   MDBTextArea,
   MDBTypography,
+  MDBInputGroup,
+  MDBInput,
+  MDBBtn
 } from "mdb-react-ui-kit";
 
 export default function Discussion() {
   return (
     <section className="vh-100">
-      <MDBContainer className="py-5" style={{ maxWidth: "1000px" }}>
+      <MDBContainer className="py-5" style={{ maxWidth: "2000px" }}>
         <MDBRow className="justify-content-center">
-          <MDBCol md="11" lg="9" xl="7">
+          <MDBCol md="11" lg="10" xl="7">
             <div className="d-flex flex-start mb-4">
               <img
                 className="rounded-circle shadow-1-strong me-3"
@@ -85,11 +90,11 @@ export default function Discussion() {
                       <div className="d-flex align-items-center">
                         <a href="#!" className="link-muted me-2">
                           <MDBIcon fas icon="thumbs-up me-1" />
-                          158
+                          27
                         </a>
                         <a href="#!" className="link-muted">
                           <MDBIcon fas icon="thumbs-down me-1" />
-                          13
+                          3
                         </a>
                       </div>
                       <a href="#!" className="link-muted">
@@ -103,13 +108,18 @@ export default function Discussion() {
           </MDBCol>
         </MDBRow>
 
-        <MDBCard className="w-100">
-          <MDBCardBody className="p-4">
-            <MDBTextArea className="w-70">
-
-            </MDBTextArea>
-          </MDBCardBody>
-        </MDBCard>
+        <Container className="p-3 w-100">
+          <MDBCard className='w-100'>
+            <MDBCardBody className="p-3">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Type Here" />
+                <MDBBtn rippleColor='dark'>
+                  <i class="fas fa-paper-plane"></i>
+                </MDBBtn>
+              </div>
+            </MDBCardBody>
+          </MDBCard>
+        </Container>
 
       </MDBContainer>
     </section>
