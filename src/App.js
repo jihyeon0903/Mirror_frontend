@@ -10,6 +10,7 @@ import SignIn from './screens/Signin'
 import Discussion from './screens/Discussion_Forum'
 import More from './screens/More'
 import TestPage from './screens/TestScreen'
+import Test from './screens/Test'
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
               <Route path="/login" element={<SignIn />} />
               <Route path="/discussion" element={<Discussion />}/>
               <Route path="/about" element={<More />}/>
-              <Route path="/test" element={<TestPage/>} />
+              <Route path="/startTest" element={<TestPage/>} />
+              <Route path="/test" element={<Test/>} />
             </Routes>
         </main>
 

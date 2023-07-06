@@ -1,10 +1,6 @@
 import React from 'react'
 import { Navbar, Nav, Container, Row, NavDropdown } from 'react-bootstrap'
 
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
-// import SignIn from './Signin';
-// import SignUp from './Signup';
-
 function Header() {
   return (
     <header>
@@ -20,7 +16,7 @@ function Header() {
             <Nav className="me-auto">
               <Nav.Link href="/discussion" className='fs-6'>Discussion Forum</Nav.Link>
               <NavDropdown title="Menu" id="basic-nav-dropdown" className='fs-6'>
-                <NavDropdown.Item href="/test" className='fs-6'>Test Now</NavDropdown.Item>
+                <NavDropdown.Item href="/startTest" className='fs-6'>Test Now</NavDropdown.Item>
                 <NavDropdown.Item href="/avatar" className='fs-6'>Avatar</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/materials">

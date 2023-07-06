@@ -1,5 +1,5 @@
 main{
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 .shadowbox {
@@ -10,10 +10,6 @@ main{
   width: 100%;
   min-height: 100%;
   padding: 20px;
-}
-
-body {
-  background: #8fc4b7;
 }
 
 .link-muted { color: #aaa; } .link-muted:hover { color: #1266f1; }
