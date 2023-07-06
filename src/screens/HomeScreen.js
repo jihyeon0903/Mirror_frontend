@@ -6,7 +6,7 @@ function HomeScreen() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={require('../images/clayBanks.jpg')}
+          src={require('../images/cans.jpg')}
           alt="..."
         />
         <Carousel.Caption>
@@ -17,7 +17,7 @@ function HomeScreen() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={require('../images/image2.jpeg')}
+          src={require('../images/clayBanks.jpg')}
           alt="..."
         />
 
@@ -29,15 +29,13 @@ function HomeScreen() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={require('../images/image3.jpeg')}
+          src={require('../images/hands.jpg')}
           alt="..."
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>"Real knowledge is to know the extent of one's ignorance."</h3>
+          <p>- Confucius -</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

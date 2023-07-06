@@ -8,13 +8,13 @@ import HomeScreen from './screens/HomeScreen'
 function App() {
   return (
     <div>
-      <Header />
+      <Header/>
       <main className='py-5'>
         <Container>
           <HomeScreen></HomeScreen>
         </Container>
       </main>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
