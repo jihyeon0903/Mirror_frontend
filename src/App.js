@@ -11,6 +11,8 @@ import Discussion from './screens/Discussion_Forum'
 import More from './screens/More'
 import TestPage from './screens/TestScreen'
 import Test from './screens/Test'
+import Processing from './screens/Processing'
+import Result from './screens/TestResult'
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
               <Route path="/about" element={<More />}/>
               <Route path="/startTest" element={<TestPage/>} />
               <Route path="/test" element={<Test/>} />
+              <Route path="/processing" element={<Processing/>} />
+              <Route path="/result" element={<Result/>} />
             </Routes>
         </main>
 

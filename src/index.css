@@ -1,5 +1,5 @@
 main{
-  min-height: 75vh;
+  min-height: 80vh;
 }
 
 .shadowbox {
@@ -10,8 +10,4 @@ main{
   width: 100%;
   min-height: 100%;
   padding: 20px;
-}
-
-.row-bottom {
-  text-align: center;
 }

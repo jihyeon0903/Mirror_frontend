@@ -2,11 +2,12 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 import {
   MDBBtn,
   MDBCard,
-  MDBCardBody,
-  MDBInput }
-from 'mdb-react-ui-kit'
+  MDBCardBody } from 'mdb-react-ui-kit'
+
+import { useNavigate } from 'react-router-dom'
 
 function Test() {
+  const navigate = useNavigate();
   return(
     <div>
       <MDBCard>
@@ -19,20 +20,25 @@ function Test() {
 
       <Container className='p-3'>
         <Row className='mt-2 text-left'>
-          <Col>
-            <Image src={require("../Samples/sample1.jpeg")} rounded width={200} />
+          <Col className='col-4'>
+            <Image src={require("../Samples/sample1.jpeg")} rounded width={250} />
           </Col>
-        </Row>
-      </Container>
-
-      <Container>
-        <Row className={"row-bottom"}>
-          <Col className='mt-5'>KeyWord 1</Col>
-          <Col className='mt-5'>KeyWord 2</Col>
-          <Col className='mt-5'>KeyWord 3</Col>
-          <Col className='mt-5'>KeyWord 4</Col>
-          <Col className='mt-5'>KeyWord 5</Col>
-        </Row>
+          <Col className='mt-5'>
+            <em><p className='fs-5'>
+              Day</p></em></Col>
+          <Col className='mt-5'>
+            <em><p className='fs-5'>
+              Hobby</p></em></Col>
+          <Col className='mt-5'>
+            <em><p className='fs-5'>
+              Job</p></em></Col>
+          <Col className='mt-5'>
+            <em><p className='fs-5'>
+              Family</p></em></Col>
+          <Col className='mt-5'>
+            <em><p className='fs-5'>
+              Date</p></em></Col>
+          </Row>
       </Container>
 
       <Container className="mt-5 w-100">
@@ -49,7 +55,9 @@ function Test() {
         </Container>
 
       <div class='text-center'>
-        <MDBBtn className='mt-5 w-50' size='lg'>Submit</MDBBtn>
+        <MDBBtn className='mt-4 w-25' size='lg' onClick={() => {navigate('/processing');}}>
+          Submit
+        </MDBBtn>
       </div>
 
     </div>
